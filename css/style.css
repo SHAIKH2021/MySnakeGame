@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#preloader{
+    visibility: visible;
+    background:linear-gradient(rgb(145, 237, 145),rgb(245, 245, 124));
+    width: 120vmin;
+    height: 94vmin;
+    border: 4px solid black;
+    top:28px;
+    left:300px;
+    border-radius: 15px;
+    position: absolute;
+    font-size: 59px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#levelBox{
+    position: absolute;
+    top:9px;
+    left: 50px;
+    font-size: 39px;
+    font-weight: bold;
+    color: white;
+}
+#scoreBox{
+    position: absolute;
+    top:9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    color: white;
+}
+#HiscoreBox{
+    position: absolute;
+    top:59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    color: white;
+}
+#board{
+    background: linear-gradient(rgb(176, 242, 176),rgb(243, 243, 166));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background:linear-gradient(red,rgb(235, 167, 30));
+    border:.25vmin solid gold;
+    border-radius: 9px;
+}
+.snake{
+    background:linear-gradient(red,purple);
+    border:.25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+    background:linear-gradient(red,purple);
+    border:.25vmin solid black;
+    border-radius: 18px;
+}
+
